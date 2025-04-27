@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevConnect - Dasturchilar Hamjamiyati</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.13);
+            min-width: 120px;
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content button {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 8px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .dropdown-content button:hover {
+            background-color: #f0f0f0;
+        }
+        a:hover, button:hover {
+            background-color: rgba(0, 0, 255, 0.3);
+            transition: background 0.3s;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4 text-white flex justify-between">
+        <h1 class="text-xl font-bold">DevConnect</h1>
+        <div>
+            <a href="#home" class="px-4">Bosh sahifa</a>
+            <a href="#mentors" class="px-4">Mentorlik</a>
+            <a href="#jobs" class="px-4">Freelance & Ish</a>
+            <div class="dropdown inline-block px-4">
+                <button class="text-white">Tilni tanlang</button>
+                <div class="dropdown-content">
+                    <button class="text-blue-600">🇺🇿 O‘zbek</button>
+                    <button class="text-blue-600">🇷🇺 Русский</button>
+                    <button class="text-blue-600">🇬🇧 English</button>
+                </div>
+            </div>
+            <div class="dropdown inline-block px-2">
+                <button> Bog`lanish</button>
+                <div class="dropdown-content">
+                     <button class="text-blue-600">Telegram:@CodeSm1th</button>
+                     
+                </div>
+            </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="text-center py-16 bg-blue-500 text-white">
+        <h2 class="text-4xl font-bold">Dasturchilar uchun yagona platforma</h2>
+        <p class="mt-4">Bilim almashish, mentor topish va loyihalarda ishlash imkoniyati</p>
+        <button class="mt-6 bg-white text-blue-500 px-6 py-2 rounded">Ro‘yxatdan o‘tish</button>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="p-8">
+        <h2 class="text-2xl font-bold text-center">Dasturlash olamiga siz ham qoshiling</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            <div class="p-4 bg-white shadow rounded">
+                <h3 class="font-semibold">🧑‍💻Ish va Freelance loyihalar</h3>
+                <p>O‘zingizga mos ish yoki freelance loyihalarni toping.</p>
+            </div>
+            <div class="p-4 bg-white shadow rounded">
+                <h3 class="font-semibold">👨‍🏫Mentorlik tizimi </h3>
+                <p>Bu sohada yangimisiz unda siz tajribali dasturchilarimiz tomonidan maslahat oling.</p>
+            </div>
+            <div class="p-4 bg-white shadow rounded">
+                <h3 class="font-semibold">Forum va Hamjamiyat</h3>
+                <p>Kuchli dasturchilar bilan tajriba almashish va kodlaringizni muhokama qiling.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mentorship Section -->
+    <section id="mentors" class="p-8 bg-gray-200">
+        <h2 class="text-2xl font-bold text-center">Dasturlash kimlar uchun?</h2>
+        <p class="text-center mt-4">Dasturlash har qanday yoshdagi va har qanday sohada ishlayotgan insonlar uchun ochiq.Siz ham bizning safimizga qoshiling.Siz ham dasturchi bo`la olasiz!</p>
+    </section>
+
+    <!-- Freelance & Jobs Section -->
+    <section id="jobs" class="p-8">
+        <h2 class="text-2xl font-bold text-center">🚀 Dasturlash yangiliklari</h2>
+        <p class="text-center mt-4">Oxirgi dasturlash texnologiyalari va trendlar bilan tanishing.</p>
+    </section>
+
+    <!-- Forum Section -->
+    <section id="forum" class="p-8 bg-gray-200">
+        <h2 class="text-2xl font-bold text-center">💡 Dasturlashning kelajagi</h2>
+        <p class="text-center mt-4">AI, IoT va Blockchain kabi innovatsion texnologiyalar qanday rivojlanmoqda?</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="text-center py-12 bg-gray-300">
+        <h2 class="text-2xl font-bold">Biz bilan bog‘laning</h2>
+        <p>Email: support@devconnect.com</p>
+    </section>
+</body>
+</html>
